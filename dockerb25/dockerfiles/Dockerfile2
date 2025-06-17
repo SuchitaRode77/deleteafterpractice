@@ -1,0 +1,5 @@
+FROM ubuntu:20.04
+run apt updte
+run apt install nginx -y
+cmd ["nginx", "-g", "daemon off;"]
+expose 80
